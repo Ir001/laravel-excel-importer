@@ -16,7 +16,8 @@ class DagriProvinceImport implements ToModel, WithHeadingRow
     public function model(array $row)
     {
         return new DagriProvince([
-            //
+            'id' => $row['id'],
+            'name' => $row['name'],
         ]);
     }
     public function headingRow(): int

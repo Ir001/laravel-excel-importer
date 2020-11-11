@@ -34,9 +34,17 @@
                         <label>Table</label>
                         <select name="table" class="form-control">
                             <option value="provinces">Provinces</option>
+                            <option value="bps_provinces">Provinces BPS</option>
+                            <option value="dagri_provinces">Provinces Dagri</option>
                             <option value="regencies">Regencies</option>
+                            <option value="bps_regencies">Regencies BPS</option>
+                            <option value="dagri_regencies">Regencies Dagri</option>
                             <option value="districts">Districts</option>
+                            <option value="bps_districts">Districts BPS</option>
+                            <option value="dagri_districts">Districts Dagri</option>
                             <option value="villages">Villages</option>
+                            <option value="bps_villages">Villages BPS</option>
+                            <option value="dagri_villages">Villages Dagri</option>
                         </select>
                     </div>
                     <div class="form-group">
