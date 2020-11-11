@@ -17,11 +17,8 @@ class VillageImport implements ToModel, WithHeadingRow
     {
         return new Village([
             'dagri_village_id' => $row['dagri_village_id'],
-            'dagri_district_id' => $row['dagri_district_id'],
-            'dagri_name' => $row['dagri_name'],
             'bps_village_id' => $row['bps_village_id'],
-            'bps_district_id' => $row['bps_district_id'],
-            'bps_name' => $row['bps_name'],
+            'name' => $row['name'],
         ]);
     }
     public function headingRow(): int

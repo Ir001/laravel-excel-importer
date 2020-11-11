@@ -2,11 +2,11 @@
 
 namespace App\Imports;
 
-use App\Model\Regency;
+use App\Model\DagriProvince;
 use Maatwebsite\Excel\Concerns\ToModel;
 use Maatwebsite\Excel\Concerns\WithHeadingRow;
 
-class RegencyImport implements ToModel, WithHeadingRow
+class DagriProvinceImport implements ToModel, WithHeadingRow
 {
     /**
     * @param array $row
@@ -15,10 +15,8 @@ class RegencyImport implements ToModel, WithHeadingRow
     */
     public function model(array $row)
     {
-        return new Regency([
-            'dagri_regency_id' => $row['dagri_regency_id'],
-            'bps_regency_id' => $row['bps_regency_id'],
-            'name' => $row['name'],
+        return new DagriProvince([
+            //
         ]);
     }
     public function headingRow(): int

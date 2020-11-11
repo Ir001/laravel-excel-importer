@@ -10,9 +10,8 @@ class Province extends Model
 
     protected $fillable = [
         'dagri_province_id',
-        'dagri_name',
         'bps_province_id',
-        'bps_name',
+        'name',
     ];
 
     public $timestamps = false;

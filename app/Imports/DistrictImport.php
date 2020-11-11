@@ -17,11 +17,8 @@ class DistrictImport implements ToModel, WithHeadingRow
     {
         return new District([
             'dagri_district_id' => $row['dagri_district_id'],
-            'dagri_regency_id' => $row['dagri_regency_id'],
-            'dagri_name' => $row['dagri_name'],
             'bps_district_id' => $row['bps_district_id'],
-            'bps_regency_id' => $row['bps_regency_id'],
-            'bps_name' => $row['bps_name'],
+            'name' => $row['name'],
         ]);
     }
     public function headingRow(): int

@@ -16,10 +16,8 @@ class ProvinceImport implements ToModel, WithHeadingRow
     public function model(array $row)
     {
         return new Province([
-            'dagri_province_id' => $row['dagri_province_id'],
-            'dagri_name' => $row['dagri_name'],
-            'bps_province_id' => $row['bps_province_id'],
-            'bps_name' => $row['bps_name'],
+            'id' => $row['id'],
+            'name' => $row['name'],
         ]);
     }
 

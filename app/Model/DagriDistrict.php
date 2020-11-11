@@ -4,13 +4,13 @@ namespace App\Model;
 
 use Illuminate\Database\Eloquent\Model;
 
-class District extends Model
+class DagriDistrict extends Model
 {
-    protected $table = 'districts';
+    protected $table = 'dagri_districts';
 
     protected $fillable = [
-        'dagri_district_id',
-        'bps_district_id',
+        'id',
+        'regency_id',
         'name',
     ];
 

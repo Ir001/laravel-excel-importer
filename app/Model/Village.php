@@ -10,11 +10,8 @@ class Village extends Model
 
     protected $fillable = [
         'dagri_village_id',
-        'dagri_district_id',
-        'dagri_name',
         'bps_village_id',
-        'bps_district_id',
-        'bps_name',
+        'name',
     ];
 
     public $timestamps = false;

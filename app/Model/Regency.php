@@ -10,11 +10,8 @@ class Regency extends Model
 
     protected $fillable = [
         'dagri_regency_id',
-        'dagri_province_id',
-        'dagri_name',
         'bps_regency_id',
-        'bps_province_id',
-        'bps_name',
+        'name',
     ];
 
     public $timestamps = false;
